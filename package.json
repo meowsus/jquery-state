@@ -1,0 +1,39 @@
+{
+  "name": "jquery-state",
+  "version": "0.1.0",
+  "description": "PubSub jQuery State Manager",
+  "main": "jquery-state.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "expect.js": "^0.3.1",
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3",
+    "jquery": "^2.2.3",
+    "jsdom": "^9.0.0",
+    "sinon": "^1.17.4",
+    "sinon-chai": "^2.8.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meowsus/jquery-state.git"
+  },
+  "keywords": [
+    "jQuery",
+    "Plugin",
+    "PubSub",
+    "State",
+    "Management"
+  ],
+  "author": "Curt Howard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meowsus/jquery-state/issues"
+  },
+  "homepage": "https://github.com/meowsus/jquery-state#readme"
+}
