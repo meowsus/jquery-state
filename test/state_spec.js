@@ -1,15 +1,16 @@
-var chai   = require('chai'),
-    expect = chai.expect,
-    sinon  = require('sinon'),
-    jQuery = require('jQuery'),
-    jsdom  = require('jsdom').jsdom,
+const chai   = require('chai');
+const expect = chai.expect;
+const sinon  = require('sinon');
+const jQuery = require('jquery');
+const jsdom  = require('jsdom');
+const { JSDOM } = jsdom;
 
-    document = global.document = jsdom('<html><body></body></html>'),
-    window   = global.window   = document.defaultView,
+const document = global.document = new JSDOM('<html><body></body></html>');
+const window   = global.window   = document.window;
 
-    $ = global.jQuery = jQuery(window),
+const $ = global.jQuery = jQuery(window);
 
-    $collection, $element1, $element2;
+let $collection, $element1, $element2;
 
 chai.use(require('sinon-chai'));
 
